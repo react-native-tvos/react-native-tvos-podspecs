@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'CppBridge' do |ss|
     ss.header_dir = 'CppBridge'
-    ss.dependency 'Flipper', '~>'+flipperkit_version
+    ss.dependency 'Flipper'
     ss.compiler_flags = folly_compiler_flags
     ss.source_files = 'iOS/FlipperKit/CppBridge/**/*.{h}'
     # We set these files as private headers since they only need to be accessed
@@ -49,7 +49,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'FBCxxFollyDynamicConvert' do |ss|
     ss.header_dir = 'FBCxxFollyDynamicConvert'
     ss.compiler_flags = folly_compiler_flags
-    ss.dependency 'Flipper-Folly', '~> 2.2'
+    ss.dependency 'Flipper-Folly'
     ss.source_files = 'iOS/FlipperKit/FBCxxFollyDynamicConvert/**/*.{h,mm}'
     # We set these files as private headers since they only need to be accessed
     # by other FlipperKit source files
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
   spec.subspec "FKPortForwarding" do |ss|
     ss.header_dir = "FKPortForwarding"
     ss.dependency 'CocoaAsyncSocket', '~> 7.6'
-    ss.dependency 'Flipper-PeerTalk', '~>0.0.4'
+    ss.dependency 'Flipper-PeerTalk'
     ss.compiler_flags = folly_compiler_flags
     ss.source_files = 'iOS/FlipperKit/FKPortForwarding/FKPortForwarding{Server,Common}.{h,m}'
     ss.private_header_files = 'iOS/FlipperKit/FKPortForwarding/FKPortForwarding{Server,Common}.h'
@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
     ss.dependency 'FlipperKit/FBCxxFollyDynamicConvert'
     ss.dependency 'FlipperKit/CppBridge'
     ss.dependency 'FlipperKit/FKPortForwarding'
-    ss.dependency 'Flipper', '~>'+flipperkit_version
+    ss.dependency 'Flipper'
     ss.compiler_flags = folly_compiler_flags
     ss.source_files = 'iOS/FlipperKit/*.{h,m,mm}', 'iOS/FlipperKit/CppBridge/*.{h,mm}'
     ss.public_header_files = 'iOS/FlipperKit/**/{FlipperDiagnosticsViewController,FlipperStateUpdateListener,FlipperClient,FlipperPlugin,FlipperConnection,FlipperResponder,SKMacros}.h'
