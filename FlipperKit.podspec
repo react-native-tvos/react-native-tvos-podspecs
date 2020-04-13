@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
     ss.dependency             'FlipperKit/Core'
     ss.dependency             'FlipperKit/FlipperKitLayoutTextSearchable'
     ss.dependency             'FlipperKit/FlipperKitHighlightOverlay'
-    ss.dependency             'YogaKit', yogakit_version
+    ss.dependency             'YogaKit'
     ss.compiler_flags       = folly_compiler_flags
     ss.public_header_files  = 'iOS/Plugins/FlipperKitLayoutPlugin/FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h',
                               'iOS/Plugins/FlipperKitLayoutPlugin/FlipperKitLayoutPlugin/SKTapListener.h',
