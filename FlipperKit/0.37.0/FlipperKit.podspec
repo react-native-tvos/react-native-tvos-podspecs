@@ -8,6 +8,7 @@ yogakit_version = '~> 1.18'
 flipperkit_version = '0.37.0'
 Pod::Spec.new do |spec|
   spec.name = 'FlipperKit'
+  spec.header_dir = 'FlipperKit'
   spec.version = flipperkit_version
   spec.license = { :type => 'MIT' }
   spec.homepage = 'https://github.com/facebook/Sonar'

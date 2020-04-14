@@ -84,6 +84,7 @@ Pod::Spec.new do |spec|
                       "folly/system/*.cpp"
 
   spec.exclude_files = "folly/synchronization/Rcu.cpp", "folly/synchronization/Rcu.h"
+  spec.tvos.exclude_files = "folly/Subprocess.*"
   spec.header_mappings_dir = 'folly'
   spec.header_dir          = 'folly'
   spec.libraries           = "stdc++"
