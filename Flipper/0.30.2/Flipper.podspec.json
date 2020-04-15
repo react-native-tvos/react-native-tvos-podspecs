@@ -23,10 +23,10 @@
   "libraries": "stdc++",
   "dependencies": {
     "Flipper-Folly": [
-      "~> 2.1"
+      "2.1.1"
     ],
     "Flipper-RSocket": [
-      "~> 1.0"
+      "1.0.0"
     ]
   },
   "compiler_flags": "-DFLIPPER_OSS=1 -DFB_SONARKIT_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0 -Wall\n    -std=c++14\n    -Wno-global-constructors",
