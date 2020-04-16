@@ -83,6 +83,9 @@
     "folly/synchronization/*.cpp",
     "folly/system/*.cpp"
   ],
+  "tvos": {
+    "exclude_files": "folly/Subprocess.*"
+  },
   "header_mappings_dir": "folly",
   "header_dir": "folly",
   "libraries": "stdc++",
