@@ -22,8 +22,8 @@
     "Flipper-DoubleConversion": [
 
     ],
-    "OpenSSL-Universal": [
-      "1.0.2.19"
+    "OpenSSL-for-iPhone": [
+      "1.0.0"
     ],
     "CocoaLibEvent": [
       "1.0.0"
