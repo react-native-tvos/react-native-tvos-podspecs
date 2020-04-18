@@ -17,13 +17,13 @@
 
     ],
     "Flipper-Glog": [
-
+      "0.3.6"
     ],
     "Flipper-DoubleConversion": [
-
+      "1.1.7"
     ],
-    "OpenSSL-for-iPhone": [
-      "1.0.0"
+    "OpenSSL-Universal": [
+      "1.0.2.9"
     ],
     "CocoaLibEvent": [
       "1.0.0"
