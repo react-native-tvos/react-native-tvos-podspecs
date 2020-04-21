@@ -21,21 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/e314521/CocoaLibEvent'
+  s.homepage         = 'https://github.com/dlowder-salesforce/CocoaLibEvent'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'e314521' => '99789999@qq.com' }
-  s.source           = { :git => 'https://github.com/e314521/CocoaLibEvent.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dlowder-salesforce/CocoaLibEvent.git' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '12.0'
+  s.tvos.deployment_target = '10.0'
 
   s.header_mappings_dir = "src"
   s.public_header_files = 'src/*.h', 'src/**/*.{h}'
   s.source_files  = 'src/*.{h}', 'src/**/*.{h}'
-  s.preserve_paths = 'src/*.{h,c}', 'src/**/*.{h}'
+  s.preserve_paths = 'src/*.{h,c}', 'src/**/*.{h}', 'lib/*.a', 'lib_tvos/*.a'
   s.ios.vendored_libraries = 'lib/*.a'
+  s.tvos.vendored_libraries = 'lib_tvos/*.a'
   s.requires_arc = false
   # s.resource_bundles = {
   #   'CocoaLibEvent' => ['CocoaLibEvent/Assets/*.png']
@@ -45,4 +46,3 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
-
