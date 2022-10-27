@@ -538,14 +538,14 @@ END_OF_CONFIG
 
 Pod::Spec.new do |spec|
   spec.name            = "libevent"
-  spec.version         = "2.1.12"
+  spec.version         = "2.1.12.1"
   spec.summary         = "Event notification library"
   spec.description     = "The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts."
   spec.homepage        = "https://libevent.org"
   spec.license         = { :type => "BSD 3-Clause", :file => "LICENSE" }
   spec.author          = "Niels Provos and Nick Mathewson"
   spec.platforms       = { :osx => "10.13", :ios => "10.0", :tvos => "10.0" }
-  spec.source          = { :git => "https://github.com/libevent/libevent.git", :tag => "release-#{spec.version}-stable" }
+  spec.source          = { :git => "https://github.com/libevent/libevent.git", :tag => "release-2.1.12-stable" }
   spec.prepare_command = "echo 'executing libevent prepare command'; touch evconfig-private.h; echo -e #{Shellwords.escape(CONFIG_WITHOUT_OPENSSL)} > include/event2/event-config.h; ls include/event2/"
   spec.source_files =
     "include/*.h", "*-{internal,private}.h",
